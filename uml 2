@@ -1,0 +1,103 @@
+public class Pizza
+{
+    public int PizzaNumber { get; set; }
+    public string Name { get; set; } 
+
+    public override string ToString()
+    {
+        return $"Pizza {PizzaNumber}: {Name}";
+    }
+
+
+public class MenuCatalog
+{
+    private List<Pizza> pizzas = new List<Pizza>();
+
+    public AddPizza(Pizza pizza)
+
+    public DeletePizza pizza (Number int)
+
+    public UpdatePizza
+    {
+        {
+            Console.WriteLine($"Pizza {updatedPizza.PizzaNumber}.");
+        }
+        else
+        {
+            Console.WriteLine($"Pizza with number updatedPizza.PizzaNumber);
+        }
+    }
+    public void PrintMenu()
+    {
+            Console.WriteLine(pizza);
+        
+    }
+}
+
+
+
+class Store
+{
+    static void Main(string[] args)
+    {
+        MenuCatalog menu = new MenuCatalog();
+        Pizza pizza1 = new Pizza { PizzaNumber = 1, Name = "Salat pizza" };
+        Pizza pizza2 = new Pizza { PizzaNumber = 2, Name = "Kebab pizza med toppings" };
+
+        menu.AddPizza(pizza1);
+        menu.AddPizza(pizza2);
+
+        menu.PrintMenu();
+        menu.DeletePizza();
+        menu.PrintMenu();
+        Pizza updatedPizza = new Pizza { PizzaNumber = 1, Salat pizza  = "Updated salat pizza" };
+        menu.UpdatePizza(updatedPizza);
+        menu.PrintMenu();
+        Pizza searchedPizza = menu.SearchPizza(1);
+        Console.WriteLine(searchedPizza);
+    }
+}
+
+
+
+
+public class menu
+{
+    public int MenuChoice()
+    {
+        Console.WriteLine("Menu:");
+        Console.WriteLine("1. Add new pizza to the menu");
+        Console.WriteLine("2. Delete pizza");
+        Console.WriteLine("3. Update pizza");
+        Console.WriteLine("4. Search pizza");
+        Console.Write("Enter your choice here: ");
+        
+        int choice;
+        while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > 5)
+        {
+            Console.WriteLine("Invalid input. Please enter a number between 1 and 5.");
+            Console.Write("Enter your choice: ");
+        }
+
+        return choice;
+    }
+}
+
+
+
+
+
+class Store
+{
+    static void Main(string[] args)
+    {
+        MenuCatalog menu = new MenuCatalog();
+        Pizza pizza1 = new Pizza { PizzaNumber = 1, Name = "salat pizza };
+        Pizza pizza2 = new Pizza { PizzaNumber = 2, Name = "kebab pizza" };
+
+        menu.AddPizza(pizza1);
+        menu.AddPizza(pizza2);
+        
+        Console.WriteLine($"User choice: {choice}");
+    }
+}
