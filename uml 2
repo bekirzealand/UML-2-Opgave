@@ -38,7 +38,7 @@ public class MenuCatalog
 
     public AddPizza(Pizza pizza)
 
-    public DeletePizza pizza (Number int)
+    public DeletePizza pizza 
 
     public UpdatePizza
     {
@@ -94,9 +94,7 @@ public class menu
         Console.WriteLine("3. Update pizza");
         Console.WriteLine("4. Search pizza");
         Console.Write("Enter your choice here: ");
-        
-        int choice;
-        while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > 5)
+    
         {
             Console.WriteLine("Invalid input. Please enter a number between 1 and 5.");
             Console.Write("Enter your choice: ");
